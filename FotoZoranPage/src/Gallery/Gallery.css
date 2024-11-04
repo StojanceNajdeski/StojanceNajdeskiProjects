@@ -1,0 +1,58 @@
+.wedding2023,
+.wedding2024 {
+  width: 50%;
+  height: calc(100vh - 110.8px);
+}
+
+.overlayGallery {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 110.8px);
+  background: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+.gallery a {
+  text-decoration: none;
+  color: white;
+}
+
+.weddingLeft {
+  cursor: pointer;
+  font-family: "Oswald", sans-serif;
+  color: white;
+  text-align: center;
+  top: 45%;
+  left: 18%;
+  z-index: 9999;
+}
+
+.weddingRight {
+  cursor: pointer;
+  font-family: "Oswald", sans-serif;
+  color: white;
+  text-align: center;
+  top: 45%;
+  right: 18%;
+  z-index: 9999;
+}
+
+.weddingLeft,
+.weddingRight,
+p {
+  margin: 0;
+}
+
+.weddingLeft,
+.weddingRight,
+p {
+  font-size: 3rem;
+}
+
+.weddingLeft,
+.weddingRight,
+span {
+  font-size: 1.5rem;
+}

@@ -1,0 +1,32 @@
+nav {
+  font-family: "Oswald", sans-serif;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+}
+
+.fotoZoranLogo {
+  width: 80px;
+  transition: transform 0.2s;
+}
+
+.fotoZoranLogo:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.navigationStyle {
+  margin-right: 2.5rem;
+}
+
+.navigateLinks li {
+  margin-left: 1rem;
+}
+
+.navigateLinks a {
+  color: rgb(37, 36, 34);
+  text-decoration: none;
+}
+
+.navigateLinks {
+  font-size: 1.5rem;
+}

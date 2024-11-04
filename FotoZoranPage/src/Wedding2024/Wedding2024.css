@@ -1,0 +1,23 @@
+.wedding2024 h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.wedding2024 a {
+  width: 100%;
+  color: rgb(37, 36, 34);
+  text-decoration: none;
+}
+
+.weddingPhotos {
+  text-align: center;
+}
+
+.wedding {
+  border-radius: 10%;
+  border: 1px solid black;
+}
+
+.weddingPhotos :not(:last-child) {
+  margin-right: 3rem;
+}

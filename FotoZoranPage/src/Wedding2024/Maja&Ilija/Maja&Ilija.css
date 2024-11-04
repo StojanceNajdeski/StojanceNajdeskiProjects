@@ -1,0 +1,28 @@
+.weddingTitle h2 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.photos {
+  width: 97%;
+  margin: 0 auto;
+}
+
+.photos img {
+  display: block;
+  width: 100%;
+  margin-bottom: 2.3rem;
+}
+
+.photos :not(:last-child) {
+  margin-right: 2rem;
+}
+
+.hoverWedding {
+  transition: transform 0.2s;
+}
+
+.hoverWedding:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}

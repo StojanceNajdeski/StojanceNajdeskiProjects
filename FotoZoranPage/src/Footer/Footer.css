@@ -1,0 +1,12 @@
+.footerLogo {
+  margin-top: 2%;
+  width: 120px;
+}
+footer {
+  font-family: "Osweld", sans-serif;
+}
+
+.footerStyle p {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+}
