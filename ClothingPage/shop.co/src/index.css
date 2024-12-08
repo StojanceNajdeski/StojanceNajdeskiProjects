@@ -36,6 +36,21 @@
   border-radius: 99em;
 }
 
+.viewAllBtn {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+  margin-bottom: 5%;
+}
+
+.viewAllBtn button {
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 99em;
+  font-size: 1rem;
+  padding: 1.2rem 5rem;
+}
+
 .btn:hover {
   background-color: #5a6c57;
   transition: 0.5s;
