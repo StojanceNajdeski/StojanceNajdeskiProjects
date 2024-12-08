@@ -1,30 +1,18 @@
-import "./NewArrivals.css";
-import blackTShirt from "../../../public/blackT-Shirt.png";
-import skinnyJeans from "../../../public/skinnyJeans.png";
-import shirt from "../../../public/shirt.png";
-import orangeShirt from "../../../public/orangeShirt.png";
-const NewArrivals = () => {
+import "./TopSelling.css";
+import VerticalShirt from "../../../public/TopSellings/VerticalShirt.png";
+import GraphicTShirt from "../../../public/TopSellings/GraphicTShirt.png";
+import LooseFitBermuda from "../../../public/TopSellings/LooseFitBermuda.png";
+import FadedJeans from "../../../public/TopSellings/FadedJeans.png";
+const TopSelling = () => {
   return (
     <>
       <div className="newArrivals position-relative">
-        <h2>New Arrivals</h2>
+        <h2>Top Sellings</h2>
         <div className="wrapper80">
           <div className="d-flex newArrivalsCards">
             <div className="flex-25 marginRight2Rem">
-              <img src={blackTShirt} alt="blacktShirtPhoto" />
-              <p>T-shirt with Tape Details</p>
-              <div className="stars">
-                <i className="fa-solid fa-star"></i>
-                <i className="fa-solid fa-star"></i>
-                <i className="fa-solid fa-star"></i>
-                <i className="fa-solid fa-star"></i>
-                <i className="fa-solid fa-star"></i>
-              </div>
-              <h3>120 &#36;</h3>
-            </div>
-            <div className="flex-25 marginRight2Rem">
-              <img src={skinnyJeans} alt="skinnyJeansPhoto" />
-              <p>Skinny Fit Jeans</p>
+              <img src={VerticalShirt} alt="VerticaStripedShirtPhoto" />
+              <p>Vertical Striped Shirt</p>
               <div className="stars">
                 <i className="fa-solid fa-star"></i>
                 <i className="fa-solid fa-star"></i>
@@ -33,14 +21,26 @@ const NewArrivals = () => {
                 <i className="fa-solid fa-star"></i>
               </div>
               <div className="d-flex align-center">
-                <h3 className="marginRight1Rem">240 &#36;</h3>
-                <s className="discount marginRight1Rem">260 &#36;</s>
+                <h3 className="marginRight1Rem">&#36;212</h3>
+                <s className="discount marginRight1Rem">&#36;232</s>
                 <small className="percentageDiscount">-20%</small>
               </div>
             </div>
             <div className="flex-25 marginRight2Rem">
-              <img src={shirt} alt="shirtPhoto" />
-              <p>Checkered Shirt</p>
+              <img src={GraphicTShirt} alt="GraphicTShirtPhoto" />
+              <p>Courage Graphic T-shirt</p>
+              <div className="stars">
+                <i className="fa-solid fa-star"></i>
+                <i className="fa-solid fa-star"></i>
+                <i className="fa-solid fa-star"></i>
+                <i className="fa-solid fa-star"></i>
+                <i className="fa-solid fa-star"></i>
+              </div>
+              <h3>&#36;145</h3>
+            </div>
+            <div className="flex-25 marginRight2Rem">
+              <img src={LooseFitBermuda} alt="LooseFitBermudaPhoto" />
+              <p>Loose Fit Bermuda Shorts</p>
               <div className="stars">
                 <i className="fa-solid fa-star"></i>
                 <i className="fa-solid fa-star"></i>
@@ -49,12 +49,12 @@ const NewArrivals = () => {
                 <i className="fa-solid fa-star"></i>
               </div>
               <div className="d-flex align-center">
-                <h3>180 &#36;</h3>
+                <h3>&#36;80</h3>
               </div>
             </div>
             <div className="flex-25">
-              <img src={orangeShirt} alt="orangeShirtPhoto" />
-              <p>Sleeve Striped T-shirt</p>
+              <img src={FadedJeans} alt="FadedJeansPhoto" />
+              <p>Faded Skinny Jeans</p>
               <div className="stars">
                 <i className="fa-solid fa-star"></i>
                 <i className="fa-solid fa-star"></i>
@@ -62,11 +62,7 @@ const NewArrivals = () => {
                 <i className="fa-solid fa-star"></i>
                 <i className="fa-solid fa-star"></i>
               </div>
-              <div className="d-flex align-center">
-                <h3 className="marginRight1Rem">130 &#36;</h3>
-                <s className="discount marginRight1Rem">160 &#36;</s>
-                <small className="percentageDiscount">-30%</small>
-              </div>
+              <h3>&#36;210</h3>
             </div>
           </div>
         </div>
@@ -74,11 +70,8 @@ const NewArrivals = () => {
       <div className="viewAllBtn">
         <button>View All</button>
       </div>
-      <div className="wrapper80">
-        <hr />
-      </div>
     </>
   );
 };
 
-export default NewArrivals;
+export default TopSelling;
