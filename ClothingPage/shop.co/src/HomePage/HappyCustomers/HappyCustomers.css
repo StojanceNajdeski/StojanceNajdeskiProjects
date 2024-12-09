@@ -1,0 +1,59 @@
+.titleHappyCustomers {
+  font-family: "Candal", sans-serif;
+  font-size: 3rem;
+  margin-top: 5%;
+  margin-bottom: 5%;
+    text-transform: uppercase;
+}
+
+.arrows {
+    font-size: 2rem;
+}
+
+.arrows i:hover {
+    transform: scale(1.2);
+    transition: 1s;
+}
+
+.arrows :not(:last-child) {
+    margin-right: 2rem;
+}
+
+.customer h2, img {
+    font-family: "Montserrat", sans-serif;
+    margin-top: 1rem;
+}
+
+
+.customer {
+    border: 1px solid rgb(230, 230, 230);
+    width: 30%;
+    border-radius: 1.5rem;
+    padding: 2rem 2.2rem 2.2rem 2rem;
+}
+
+
+.review {
+    margin-top: 1rem;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(102, 102, 102);
+}
+
+.verification {
+    width: auto;
+    height: 25px;
+    margin-left: 0.8rem;
+}
+
+.starsCustomers {
+    display: inline-flex;
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    color: #FFC633;
+    gap: 0;
+    text-align: center;
+  }
+  
+  .starsCustomers :not(:last-child) {
+    margin-right: 0.5rem;
+  }

@@ -12,6 +12,15 @@
   margin: 0 auto;
 }
 
+.wrapper90 {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
 .d-flex {
   display: flex;
 }
@@ -32,6 +41,14 @@
   flex-basis: 25%;
 }
 
+.flex-60 {
+  flex-basis: 60%;
+}
+
+.flex-40 {
+  flex-basis: 40%;
+}
+
 .btn {
   background-color: black;
   border: none;
@@ -48,6 +65,10 @@
 
 .marginRight1Rem {
   margin-right: 1rem;
+}
+
+.bgLightGray {
+  background-color: rgb(240, 240, 240);
 }
 
 .viewAllBtn {

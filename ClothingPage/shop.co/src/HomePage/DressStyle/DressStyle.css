@@ -1,0 +1,54 @@
+.dressStyle {
+    border-radius: 3rem;
+    padding-bottom: 3%;
+}
+
+.dressStyle h2 {
+  font-family: "Candal", sans-serif;
+  padding-top: 5%;
+  padding-bottom: 4%;
+  font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.style img {
+    height: 350px;
+    width: auto;
+    margin-bottom: 2rem;   
+}
+
+.styleCategory:hover {
+    transform: scale(1.02);
+    transition: 0.5s;
+}
+
+.style :not(:last-child) {
+    margin-right: 2rem;
+}
+
+.style h3 {
+    cursor: pointer;
+    font-size: 2.5rem;
+    font-family: "Montserrat", sans-serif;
+
+}
+
+.smallerStyle img {
+    width: 100%;
+    border-radius: 3rem;
+}
+
+.biggerStyle img {
+    width: 100%;
+    border-radius: 3rem;
+}
+
+.biggerTitle {
+    top: 10%;
+    left: 8%;
+}
+
+.smallerTitle {
+    top: 10%;
+    left: 8%;
+}

@@ -37,7 +37,7 @@
 .stars {
   display: inline-flex;
   margin-top: 1rem;
-  color: yellow;
+  color: #FFC633;
   gap: 0;
   text-align: center;
 }

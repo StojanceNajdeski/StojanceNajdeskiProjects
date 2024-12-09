@@ -1,5 +1,7 @@
+import Footer from "../Footer/Footer";
+import DressStyle from "./DressStyle/DressStyle";
+import HappyCustomers from "./HappyCustomers/HappyCustomers";
 import Header from "./Header/Header";
-import "./HomePage.css";
 import Navbar from "./Navbar/Navbar";
 import NewArrivals from "./NewArrivals/NewArrivals";
 import TopSelling from "./TopSelling/TopSelling";
@@ -10,6 +12,9 @@ const HomePage = () => {
       <Header />
       <NewArrivals />
       <TopSelling />
+      <DressStyle />
+      <HappyCustomers />
+      <Footer />
     </div>
   );
 };

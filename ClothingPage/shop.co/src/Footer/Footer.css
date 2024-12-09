@@ -1,0 +1,111 @@
+footer {
+    background-color: rgb(240, 240, 240);
+}
+
+.upToDate h2 {
+  font-family: "Candal", sans-serif;
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+.upToDate {
+    background-color: black;
+    color: white;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    padding-top: 2.5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 2.5rem;
+    border-radius: 2rem;
+}
+
+.upToDate input {
+    height: 55px;
+    width: 20vw;
+    border-radius: 99em;
+}
+
+.upToDate input::placeholder {
+    padding-left: 3rem;
+    font-family: "Montserrat", sans-serif;
+}
+
+.envelope {
+    top: 3%;
+    left: 4%;
+}
+
+.subscribe {
+    width: 20vw;
+    margin-top: 1rem;
+    border: 1px solid white;
+    background-color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    border: none;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    border-radius: 99em;
+
+}
+
+.subscribe:hover {
+    transition: 0.5s;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+
+.shopCoStyles h2 {
+  font-family: "Candal", sans-serif;
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.shopCoStyles p {
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+  color: rgb(102, 102, 102);
+  font-family: "Montserrat", sans-serif;
+  
+}
+
+.fa-twitter, .fa-instagram, .fa-github {
+    background-color: white;
+    border: 1px solid gray;
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    border-radius: 99em;
+}
+
+.fa-facebook-f {
+    background-color: black;
+    color: white;
+    border: 1px solid gray;
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    border-radius: 99em;
+}
+
+.socialMediaLinks :not(:last-child) {
+    margin-right: 1rem;
+}
+
+.socialMediaLinks {
+    margin-bottom: 8%;
+}
+
+.footerTitle {
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+}
+
+.copyrightShop {
+    padding-top: 2.5rem;
+    padding-bottom: 5%;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(102, 102, 102);
+}
