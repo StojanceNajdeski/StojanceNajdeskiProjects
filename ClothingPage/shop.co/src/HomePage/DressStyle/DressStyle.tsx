@@ -3,6 +3,7 @@ import Casual from "../../../public/DressStyle/Casual.png";
 import Formal from "../../../public/DressStyle/Formal.png";
 import Party from "../../../public/DressStyle/Party.png";
 import Gym from "../../../public/DressStyle/Gym.png";
+import { Link } from "react-router-dom";
 
 const DressStyle = () => {
   return (
@@ -10,10 +11,12 @@ const DressStyle = () => {
       <div className="bgLightGray dressStyle">
         <h2 className="text-center">Browse by Dress Style</h2>
         <div className="d-flex wrapper90 style">
-          <div className="flex-40 smallerStyle styleCategory position-relative">
-            <img src={Casual} alt="CasualStyleImage" />
-            <h3 className="position-absolute smallerTitle">Casual</h3>
-          </div>
+          <Link to="/casual">
+            <div className="flex-40 smallerStyle styleCategory position-relative">
+              <img src={Casual} alt="CasualStyleImage" />
+              <h3 className="position-absolute smallerTitle">Casual</h3>
+            </div>
+          </Link>
           <div className="flex-60 biggerStyle styleCategory position-relative">
             <img src={Formal} alt="FormalStyleImage" />
             <h3 className="position-absolute biggerTitle">Formal</h3>
