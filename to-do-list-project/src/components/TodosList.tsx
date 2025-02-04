@@ -16,19 +16,21 @@ const TodosList: React.FC<TodosListProps> = ({ todos, setTodos }) => {
     <div>
       {todos.map((todo) => (
         <li className="todoList" key={todo.id}>
-          <div className="list">
-            <input
-              type="text"
-              value={todo.title}
-              onChange={(e) => e.preventDefault()}
-            />
-          </div>
+          <input
+            type="text"
+            value={todo.title}
+            onChange={(e) => e.preventDefault()}
+            disabled
+          />
           <div className="taskButtons">
             <div className="doneTaskBtn">
               <i className="fa-solid fa-check"></i>
             </div>
             <div className="editTaskBtn">
               <i className="fa-solid fa-pen-to-square"></i>
+            </div>
+            <div className="deleteTaskBtn">
+              <i className="fa-solid fa-trash"></i>
             </div>
           </div>
         </li>

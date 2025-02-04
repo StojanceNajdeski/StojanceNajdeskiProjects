@@ -67,13 +67,13 @@ html {
     list-style-type: none;
 }
 
-.list input {
+.todoList input {
     font-size: 1.2rem;
     padding-top: 0.7rem;
     padding-bottom: 0.7rem;
     padding-left: 1rem;
     padding-right: 1rem;
-    width: 100%;
+    width: 38%;
     border-radius: 8px;
     color: white;
     border: 1px solid #46627F;
@@ -87,7 +87,7 @@ html {
 .doneTaskBtn {
     position: absolute;
     font-size: 1.2rem;
-    right: 45%;
+    right: 44.7%;
 }
 
 .editTaskBtn {
@@ -95,6 +95,16 @@ html {
     right: 42.5%;
 }
 
+.deleteTaskBtn {
+    position: absolute;
+    right: 40.5%;
+}
+
+.taskButtons {
+    margin-bottom: 1rem;
+}
+
 .taskButtons i {
+    cursor: pointer;
     color: #003E7F;
 }
