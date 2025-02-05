@@ -2,17 +2,12 @@ import { useState } from "react";
 import TodoForm from "./components/TodoForm";
 import TodoHeader from "./components/TodoHeader";
 import TodosList from "./components/TodosList";
-
-interface Todo {
-  id: string;
-  title: string;
-  completed: boolean;
-  isEditing: boolean;
-}
+import { Todo } from "./todo";
 
 function App() {
   const [input, setInput] = useState<string>("");
-  const [todos, setTodos] = useState<Todo[]>([]); // Specify that todos is an array of Todo objects
+  const [todos, setTodos] = useState<Todo[]>([]);
+  const [editTodo, setEditTodo] = useState<Todo | null>(null);
 
   return (
     <div className="container">
@@ -25,11 +20,16 @@ function App() {
           setInput={setInput}
           todos={todos}
           setTodos={setTodos}
+          editTodo={editTodo}
+          setEditTodo={setEditTodo}
         />
       </div>
       <div>
-        <TodosList todos={todos} setTodos={setTodos} />{" "}
-        {/* Pass todos and setTodos as props */}
+        <TodosList
+          todos={todos}
+          setTodos={setTodos}
+          setEditTodo={setEditTodo}
+        />
       </div>
     </div>
   );

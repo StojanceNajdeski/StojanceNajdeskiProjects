@@ -1,40 +1,58 @@
 import { v4 as uuidv4 } from "uuid";
-
-interface TodoFormProps {
-  input: string;
-  setInput: React.Dispatch<React.SetStateAction<string>>;
-  todos: Todo[];
-  setTodos: React.Dispatch<React.SetStateAction<Todo[]>>;
-}
-
-interface Todo {
-  id: string;
-  title: string;
-  completed: boolean;
-  isEditing: boolean;
-}
+import { useEffect } from "react";
+import { Todo, TodoFormProps } from "../todo";
 
 const TodoForm: React.FC<TodoFormProps> = ({
   input,
   setInput,
   todos,
   setTodos,
+  editTodo,
+  setEditTodo,
 }) => {
   const onInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setInput(e.target.value);
+    e.preventDefault();
   };
+
+  const updateTodo = (updatedTodo: Todo) => {
+    const newTodos = todos.map((todo) =>
+      todo.id === updatedTodo.id ? updatedTodo : todo
+    );
+    setTodos(newTodos);
+    setEditTodo(null);
+  };
+
+  useEffect(() => {
+    if (editTodo) {
+      setInput(editTodo.title);
+    } else {
+      setInput("");
+    }
+  }, [setInput, editTodo]); // ✅ Correct syntax
 
   const onFormSubmit = (e: React.SyntheticEvent<HTMLFormElement>) => {
     e.preventDefault();
-    if (input.trim()) {
-      const newTodo: Todo = {
-        id: uuidv4(),
-        completed: false,
-        title: input,
-        isEditing: false,
-      };
-      setTodos((prevTodos) => [...prevTodos, newTodo]);
-      setInput("");
+    if (editTodo) {
+      if (input.trim()) {
+        const updatedTodo: Todo = {
+          ...editTodo,
+          title: input,
+        };
+        updateTodo(updatedTodo);
+        setInput("");
+      }
+    } else {
+      if (input.trim()) {
+        const newTodo: Todo = {
+          id: uuidv4(),
+          title: input,
+          completed: false,
+          isEditing: false,
+        };
+        setTodos((prevTodos) => [...prevTodos, newTodo]);
+        setInput("");
+      }
     }
   };
 
@@ -49,7 +67,7 @@ const TodoForm: React.FC<TodoFormProps> = ({
         onChange={onInputChange}
       />
       <button className="addTaskBtn" type="submit">
-        Add Task
+        {editTodo ? "OK" : "Add Task"}
       </button>
     </form>
   );

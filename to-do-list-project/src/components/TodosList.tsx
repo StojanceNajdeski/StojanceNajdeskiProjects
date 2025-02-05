@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 interface Todo {
   id: string;
   title: string;
@@ -9,9 +9,36 @@ interface Todo {
 interface TodosListProps {
   todos: Todo[];
   setTodos: React.Dispatch<React.SetStateAction<Todo[]>>;
+  setEditTodo: React.Dispatch<React.SetStateAction<Todo | null>>;
 }
 
-const TodosList: React.FC<TodosListProps> = ({ todos, setTodos }) => {
+interface ProductProps {
+  id: string;
+}
+
+const TodosList: React.FC<TodosListProps> = ({
+  todos,
+  setTodos,
+  setEditTodo,
+}) => {
+  const [isCompleted, setIsCompleted] = useState(false);
+  const handleComplete = ({ id }: ProductProps) => {
+    setTodos(
+      todos.map((item) =>
+        item.id === id ? { ...item, completed: !item.completed } : item
+      )
+    );
+  };
+
+  const handleEdit = ({ id }: ProductProps) => {
+    const findTodo = todos.find((todo) => todo.id === id) || null;
+    setEditTodo(findTodo);
+  };
+
+  const handleDelete = ({ id }: ProductProps) => {
+    setTodos(todos.filter((todo) => todo.id !== id));
+  };
+
   return (
     <div>
       {todos.map((todo) => (
@@ -19,18 +46,31 @@ const TodosList: React.FC<TodosListProps> = ({ todos, setTodos }) => {
           <input
             type="text"
             value={todo.title}
+            className={`task ${todo.completed ? "complete" : ""} `}
             onChange={(e) => e.preventDefault()}
             disabled
           />
           <div className="taskButtons">
-            <div className="doneTaskBtn">
-              <i className="fa-solid fa-check"></i>
+            <div
+              className={"doneTaskBtn " + (isCompleted ? "overline" : "")}
+              onClick={() => setIsCompleted(!isCompleted)}
+            >
+              <i
+                className="fa-solid fa-check"
+                onClick={() => handleComplete(todo)}
+              ></i>
             </div>
             <div className="editTaskBtn">
-              <i className="fa-solid fa-pen-to-square"></i>
+              <i
+                className="fa-solid fa-pen-to-square"
+                onClick={() => handleEdit(todo)}
+              ></i>
             </div>
             <div className="deleteTaskBtn">
-              <i className="fa-solid fa-trash"></i>
+              <i
+                className="fa-solid fa-trash"
+                onClick={() => handleDelete(todo)}
+              ></i>
             </div>
           </div>
         </li>
