@@ -1,8 +1,8 @@
 "use client";
 
+import { useRouter } from "next/navigation";
 import { useState } from "react";
-import { db } from "~/server/db";
-import { users } from "~/server/db/schema";
+import Navbar from "~/Navbar";
 
 const signup = () => {
   const [firstName, setFirstName] = useState("");
@@ -11,6 +11,7 @@ const signup = () => {
   const [password, setPassword] = useState("");
   const [confirmPass, setConfirmPass] = useState("");
   const [error, setError] = useState("");
+  const navigate = useRouter();
 
   const handleSubmit = async (e: React.SyntheticEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -23,73 +24,97 @@ const signup = () => {
       setError("All fields are required");
     }
     try {
-      const usersData = {
-        firstName: firstName,
-        lastName: lastName,
-        email: email,
-        password: password,
-        confirmPass: confirmPass,
-      };
-
-      const response = await fetch("api/register", {
+      const response = await fetch("/api/register", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ usersData }),
+        body: JSON.stringify({ firstName, lastName, email, password }),
       });
 
       const data = await response.json();
+      console.log("Success:", data);
 
       if (!response.ok) {
-        setError(data.message || "Something went wrong");
+        const errorText = await response.text();
+        console.error("Error:", errorText);
       }
 
       console.log("User registered sucessfully!");
+
+      navigate.push("/");
+
+      setFirstName("");
+      setLastName("");
+      setEmail("");
+      setPassword("");
+      setConfirmPass("");
     } catch (error) {
       console.error("Error inserting user:", error);
     }
   };
 
   return (
-    <div className="flex">
-      <form onSubmit={handleSubmit}>
-        {error && <p className="text-center text-red-600">{error}</p>}
-        <label htmlFor="firstName">First Name</label>
-        <input
-          type="firstName"
-          id="firstName"
-          value={firstName}
-          onChange={(e) => setFirstName(e.target.value)}
-        />
-        <label htmlFor="lastName">Last Name</label>
-        <input
-          type="lastName"
-          id="lastName"
-          value={lastName}
-          onChange={(e) => setLastName(e.target.value)}
-        />
-        <label htmlFor="email">E - Mail</label>
-        <input
-          type="email"
-          id="email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-        />
-        <label htmlFor="password">Password</label>
-        <input
-          type="password"
-          id="password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-        />
-        <label htmlFor="confirmPass">Confirm Password</label>
-        <input
-          type="password"
-          id="confirmPass"
-          value={confirmPass}
-          onChange={(e) => setConfirmPass(e.target.value)}
-        />
-        <button type="submit">SUBMIT</button>
-      </form>
+    <div>
+      <Navbar />
+      <div>
+        <form
+          onSubmit={handleSubmit}
+          className="mx-auto bg-zinc-500 text-center"
+        >
+          {error && <p className="text-center text-red-600">{error}</p>}
+          <label htmlFor="firstName">First Name</label>
+          <br />
+          <input
+            type="firstName"
+            id="firstName"
+            value={firstName}
+            onChange={(e) => setFirstName(e.target.value)}
+          />
+          <br />
+          <label htmlFor="lastName">Last Name</label>
+          <br />
+          <input
+            type="lastName"
+            id="lastName"
+            value={lastName}
+            onChange={(e) => setLastName(e.target.value)}
+          />
+          <br />
+          <label htmlFor="email">E - Mail</label>
+          <br />
+          <input
+            type="email"
+            id="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <br />
+          <label htmlFor="password">Password</label>
+          <br />
+          <input
+            type="password"
+            id="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
+          <br />
+          <label htmlFor="confirmPass">Confirm Password</label>
+          <br />
+          <input
+            type="password"
+            id="confirmPass"
+            value={confirmPass}
+            onChange={(e) => setConfirmPass(e.target.value)}
+          />
+          <br />
+          <br />
+          <button
+            type="submit"
+            className="rounded border border-blue-700 bg-blue-500 px-4 py-2 font-bold text-white hover:bg-blue-700"
+          >
+            SUBMIT
+          </button>
+        </form>
+      </div>
     </div>
   );
 };
