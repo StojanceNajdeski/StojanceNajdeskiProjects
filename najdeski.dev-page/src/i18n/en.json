@@ -1,0 +1,20 @@
+{
+  "stojancheNajdeski": "Stojanche Najdeski",
+  "certificate": "Certificate",
+  "myCertificates": "My certificates",
+  "from": "from",
+
+  "projects": "Projects",
+  "certificates": "Certificates",
+  "aboutMe": "About Me",
+  "contact": "Contact",
+
+  "aboutMeDesc": "I am Stojanche Najdeski, 22 years old, and a young enthusiast in front-end development. My journey into the world of programming started out of curiosity but quickly turned into a true passion. I love creating functional and visually appealing websites, and I constantly strive to improve in this dynamic field. My goal is to work on real-world projects where I can apply what I have learned and continue growing as a front-end developer.",
+  "academy": "Academy",
+  "brainsterDesc": "A year ago, I successfully completed the Brainster Front-End Academy, an intensive program designed to prepare students for the real IT market. The academy lasted several months and was focused on practical work – we worked on real projects, had mentoring sessions, and received regular feedback. We worked in teams, participated in design sprints, and learned how to communicate and present technical solutions. Each project was graded, which helped us understand where we could improve.",
+  "skillsAndTools": "Skills and Tools",
+  "academyExperience": "During the academy, I learned to see web development not just as coding, but as a way of thinking and solving problems. I started with the basics of HTML, CSS, and JavaScript, and then moved on to React – a library we used to create dynamic and interactive applications. We also worked with tools like Git and GitHub for team collaboration and learned how to connect data using APIs. Additionally, we had lectures on UI/UX design, which helped me understand how to create a website that not only looks good but is also practical and user-friendly. All of this gave me a solid foundation and motivated me to continue learning and growing.",
+  "academyDiploma": "Academy Diploma",
+
+  "location": "Macedonia, Skopje"
+}

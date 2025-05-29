@@ -12,18 +12,20 @@ import AcademyDiploma1 from "../../public/Certificates/AcademyDiploma1.png";
 import AcademyDiploma2 from "../../public/Certificates/AcademyDiploma2.png";
 import NextDiploma from "../../public/Certificates/NextDiploma.png";
 import Background from "../../public/Background.jpg";
+import { useTranslation } from "react-i18next";
 
 const Certificates = () => {
+  const { t } = useTranslation();
   return (
     <div className="relative bg-zinc-300 min-h-screen">
       <div className="absolute top-0 left-0 w-full z-0 opacity-20 flex flex-col">
         <img src={Background} alt="backgroundImage" className="w-full" />
         <img src={Background} alt="backgroundImage" className="w-full" />
       </div>
-      <div className="pt-44 pb-15">
+      <div className="pt-44">
         <div className="w-[90%] mx-auto">
           <h2 className="text-center nunitoFont text-5xl mb-8 z-10">
-            Моите Сертификати
+            {t("myCertificates")}
           </h2>
           <div className="flex">
             <div className="basis-1/4 scale-95 hover:scale-100 ease-in duration-300">
@@ -32,8 +34,8 @@ const Certificates = () => {
                 alt="HTMLCertificate"
                 className="rounded-t-3xl"
               />
-              <h2 className="text-center manropeFont text-3xl bg-sky-600 text-white rounded-b-3xl py-3">
-                HTML Certificate
+              <h2 className="text-center manropeFont text-2xl bg-sky-600 text-white rounded-b-3xl py-3">
+                HTML {t("certificate")}
               </h2>
             </div>
             <div className="basis-1/4 scale-95 hover:scale-100 ease-in duration-300">
@@ -42,8 +44,8 @@ const Certificates = () => {
                 alt="CSSCertificate"
                 className="rounded-t-3xl"
               />
-              <h2 className="text-center manropeFont text-3xl bg-sky-600 text-white rounded-b-3xl py-3">
-                CSS Certificate
+              <h2 className="text-center manropeFont text-2xl bg-sky-600 text-white rounded-b-3xl py-3">
+                CSS {t("certificate")}
               </h2>
             </div>
             <div className="basis-1/4 scale-95 hover:scale-100 ease-in duration-300">
@@ -52,8 +54,8 @@ const Certificates = () => {
                 alt="SassCertificate"
                 className="rounded-t-3xl"
               />
-              <h2 className="text-center manropeFont text-3xl bg-sky-600 text-white rounded-b-3xl py-3">
-                Sass Certificate
+              <h2 className="text-center manropeFont text-2xl bg-sky-600 text-white rounded-b-3xl py-3">
+                Sass {t("certificate")}
               </h2>
             </div>
             <div className="basis-1/4 scale-95 hover:scale-100 ease-in duration-300">
@@ -62,8 +64,8 @@ const Certificates = () => {
                 alt="GitCertificate"
                 className="rounded-t-3xl"
               />
-              <h2 className="text-center manropeFont text-3xl bg-sky-600 text-white rounded-b-3xl py-3">
-                GIT Certificate
+              <h2 className="text-center manropeFont text-2xl bg-sky-600 text-white rounded-b-3xl py-3">
+                GIT {t("certificate")}
               </h2>
             </div>
             <div className="basis-1/4 scale-95 hover:scale-100 ease-in duration-300">
@@ -72,8 +74,8 @@ const Certificates = () => {
                 alt="UXUIDesignCertificate"
                 className="rounded-t-3xl"
               />
-              <h2 className="text-center manropeFont text-3xl bg-sky-600 text-white rounded-b-3xl py-3">
-                UX/UI Design Certificate
+              <h2 className="text-center manropeFont text-2xl bg-sky-600 text-white rounded-b-3xl py-3">
+                UX/UI Design {t("certificate")}
               </h2>
             </div>
           </div>
@@ -84,8 +86,8 @@ const Certificates = () => {
                 alt="JavaScriptCertificate"
                 className="rounded-t-3xl"
               />
-              <h2 className="text-center manropeFont text-3xl bg-sky-600 text-white rounded-b-3xl py-3">
-                JavaScript Certificate
+              <h2 className="text-center manropeFont text-2xl bg-sky-600 text-white rounded-b-3xl py-3">
+                JavaScript {t("certificate")}
               </h2>
             </div>
             <div className="basis-1/4 scale-95 hover:scale-100 ease-in duration-300">
@@ -94,8 +96,8 @@ const Certificates = () => {
                 alt="JQueryAjaxCertificate"
                 className="rounded-t-3xl"
               />
-              <h2 className="text-center manropeFont text-3xl bg-sky-600 text-white rounded-b-3xl py-3">
-                JQuery & Ajax Certificate
+              <h2 className="text-center manropeFont text-2xl bg-sky-600 text-white rounded-b-3xl py-3">
+                JQuery & Ajax {t("certificate")}
               </h2>
             </div>
             <div className="basis-1/4 scale-95 hover:scale-100 ease-in duration-300">
@@ -104,8 +106,8 @@ const Certificates = () => {
                 alt="TypeScriptCertificate"
                 className="rounded-t-3xl"
               />
-              <h2 className="text-center manropeFont text-3xl bg-sky-600 text-white rounded-b-3xl py-3">
-                Typescript Certificate
+              <h2 className="text-center manropeFont text-2xl bg-sky-600 text-white rounded-b-3xl py-3">
+                Typescript {t("certificate")}
               </h2>
             </div>
             <div className="basis-1/4 scale-95 hover:scale-100 ease-in duration-300">
@@ -114,8 +116,8 @@ const Certificates = () => {
                 alt="ReactjsCertificate"
                 className="rounded-t-3xl"
               />
-              <h2 className="text-center manropeFont text-3xl bg-sky-600 text-white rounded-b-3xl py-3">
-                React.js Certificate
+              <h2 className="text-center manropeFont text-2xl bg-sky-600 text-white rounded-b-3xl py-3">
+                React.js {t("certificate")}
               </h2>
             </div>
             <div className="basis-1/4 scale-95 hover:scale-100 ease-in duration-300">
@@ -124,13 +126,13 @@ const Certificates = () => {
                 alt="NextjsCertificate"
                 className="rounded-t-3xl"
               />
-              <h2 className="text-center manropeFont text-3xl bg-sky-600 text-white rounded-b-3xl py-3">
-                Next.js Certificate
+              <h2 className="text-center manropeFont text-2xl bg-sky-600 text-white rounded-b-3xl py-3">
+                Next.js {t("certificate")}
               </h2>
             </div>
           </div>
           <h2 className="text-center nunitoFont text-5xl mb-8 mt-20 pb-10">
-            Диплома Од Академијата
+            {t("academyDiploma")}
           </h2>
           <div className="flex">
             <div className="basis-1/2 scale-95 hover:scale-100 ease-in duration-300">
@@ -149,7 +151,7 @@ const Certificates = () => {
             </div>
           </div>
           <h2 className="text-center nunitoFont text-5xl mb-8 mt-15 pb-10">
-            Сертификат Од Brainster Next Collage
+            {t("certificate")} {t("from")} Brainster Next Collage
           </h2>
           <div className="flex items-center justify-center">
             <div className="basis-1/2 scale-95 hover:scale-100 ease-in duration-300">

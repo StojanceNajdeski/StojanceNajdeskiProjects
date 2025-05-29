@@ -1,0 +1,20 @@
+{
+  "stojancheNajdeski": "Stojanche Najdeski",
+  "certificate": "Zertifikat",
+  "myCertificates": "Meine zertifikate",
+  "from": "aus",
+
+  "projects": "Projekte",
+  "certificates": "Zertifikate",
+  "aboutMe": "Über mich",
+  "contact": "Kontakt",
+
+  "aboutMeDesc": "Ich bin Stojanche Najdeski, 22 Jahre alt, und ein junger Enthusiast für Frontend-Entwicklung. Meine Reise in die Welt der Programmierung begann aus Neugier, entwickelte sich aber schnell zu einer echten Leidenschaft. Ich liebe es, funktionale und visuell ansprechende Websites zu erstellen, und strebe ständig danach, mich in diesem dynamischen Bereich weiterzuentwickeln. Mein Ziel ist es, an realen Projekten zu arbeiten, bei denen ich das Gelernte anwenden und mich als Frontend-Entwickler weiterentwickeln kann.",
+  "academy": "Akademie",
+  "brainsterDesc": "Vor einem Jahr habe ich erfolgreich die Brainster Front-End Akademie abgeschlossen – ein intensives Programm, das darauf ausgelegt ist, Studierende auf den realen IT-Markt vorzubereiten. Die Akademie dauerte mehrere Monate und war praxisorientiert – wir arbeiteten an echten Projekten, hatten Mentoring-Sitzungen und bekamen regelmäßig Feedback. Wir arbeiteten in Teams, nahmen an Design-Sprints teil und lernten, wie man technische Lösungen kommuniziert und präsentiert. Jedes Projekt wurde bewertet, was uns half zu verstehen, wo wir uns verbessern konnten.",
+  "skillsAndTools": "Fähigkeiten und Werkzeuge",
+  "academyExperience": "Während der Akademie habe ich gelernt, Webentwicklung nicht nur als Programmierung zu sehen, sondern als eine Denkweise und Methode zur Problemlösung. Ich begann mit den Grundlagen von HTML, CSS und JavaScript und machte dann mit React weiter – einer Bibliothek, mit der wir dynamische und interaktive Anwendungen entwickelten. Wir arbeiteten auch mit Tools wie Git und GitHub für die Teamarbeit und lernten, wie man Daten über APIs verbindet. Außerdem hatten wir Vorlesungen über UI/UX-Design, was mir half zu verstehen, wie man eine Website erstellt, die nicht nur gut aussieht, sondern auch praktisch und benutzerfreundlich ist. All das hat mir ein solides Fundament gegeben und mich motiviert, weiter zu lernen und mich weiterzuentwickeln.",
+  "academyDiploma": "Akademie Diplom",
+
+  "location": "Mazedonien, Skopje"
+}
