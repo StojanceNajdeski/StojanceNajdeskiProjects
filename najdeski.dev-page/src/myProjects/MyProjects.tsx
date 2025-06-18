@@ -12,12 +12,11 @@ const MyProjects = () => {
     <div className="bg-zinc-300 min-h-screen pt-24">
       <div className="absolute top-0 left-0 w-full z-0 opacity-20 flex flex-col">
         <img src={Background} alt="backgroundImage" className="w-full" />
-        <img src={Background} alt="backgroundImage" className="w-full" />
       </div>
       <div className="w-[90%] mx-auto ">
         <h2 className="text-center nunitoFont text-5xl mt-15">My Projects</h2>
-        <div className="flex pt-10">
-          <div className="basis-3/6 z-10 scale-95 hover:scale-100 ease-in duration-300">
+        <div className="flex gap-5 pt-10">
+          <div className="basis-3/12 z-10 scale-95 hover:scale-100 ease-in duration-300">
             <a
               href="https://github.com/StojanceNajdeski/StojanceNajdeskiProjects/tree/RickAndMortyApp"
               target="blank"
@@ -36,7 +35,7 @@ const MyProjects = () => {
               </h3>
             </div>
           </div>
-          <div className="basis-3/6 z-10 scale-95 hover:scale-100 ease-in duration-300">
+          <div className="basis-3/12 z-10 scale-95 hover:scale-100 ease-in duration-300">
             <div className="h-full bg-white rounded-t-2xl flex items-center justify-center overflow-hidden">
               <img
                 src={LoginRegister}
@@ -50,9 +49,7 @@ const MyProjects = () => {
               </h3>
             </div>
           </div>
-        </div>
-        <div className="flex gap-5 pt-18">
-          <div className="basis-3/6 z-10">
+          <div className="basis-3/12 z-10 scale-95 hover:scale-100 ease-in duration-300">
             <div className="h-full bg-white rounded-t-2xl flex items-center justify-center overflow-hidden">
               <img
                 src={LoginRegisterTRPC}
@@ -66,7 +63,7 @@ const MyProjects = () => {
               </h3>
             </div>
           </div>
-          <div className="basis-3/6 z-10">
+          <div className="basis-3/12 z-10 scale-95 hover:scale-100 ease-in duration-300">
             <div className="h-full bg-white rounded-t-2xl flex items-center justify-center overflow-hidden">
               <img
                 src={toDoList}
@@ -82,7 +79,7 @@ const MyProjects = () => {
           </div>
         </div>
         <div className="flex gap-5 pt-18">
-          <div className="basis-3/6 z-10">
+          <div className="basis-1/3 z-10 scale-95 hover:scale-100 ease-in duration-300">
             <div className="h-full bg-white rounded-t-2xl flex items-center justify-center overflow-hidden">
               <img
                 src={BrainsterProject01}
@@ -96,7 +93,7 @@ const MyProjects = () => {
               </h3>
             </div>
           </div>
-          <div className="basis-3/6 z-10">
+          <div className="basis-1/3 z-10 scale-95 hover:scale-100 ease-in duration-300">
             <div className="h-full bg-white rounded-t-2xl flex items-center justify-center overflow-hidden">
               <img
                 src={BrainsterProject02}
@@ -110,9 +107,7 @@ const MyProjects = () => {
               </h3>
             </div>
           </div>
-        </div>
-        <div className="flex justify-center items-center">
-          <div className="z-10 basis-3/6 pt-18">
+          <div className="basis-1/3 z-10 scale-95 hover:scale-100 ease-in duration-300">
             <div className="h-full bg-white rounded-t-2xl flex items-center justify-center overflow-hidden">
               <img
                 src={BrainsterProject03}

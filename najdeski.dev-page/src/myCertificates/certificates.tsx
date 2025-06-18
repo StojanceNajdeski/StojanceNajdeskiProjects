@@ -24,10 +24,10 @@ const Certificates = () => {
       </div>
       <div className="pt-44">
         <div className="w-[90%] mx-auto">
-          <h2 className="text-center nunitoFont text-5xl mb-8 z-10">
+          <h2 className="text-center nunitoFont text-5xl mb-8 z-10 animate__animated animate__bounceInDown">
             {t("myCertificates")}
           </h2>
-          <div className="flex">
+          <div className="flex animate__animated animate__bounceInLeft">
             <div className="basis-1/4 scale-95 hover:scale-100 ease-in duration-300">
               <img
                 src={HTMLCertificate}
@@ -79,7 +79,7 @@ const Certificates = () => {
               </h2>
             </div>
           </div>
-          <div className="flex">
+          <div className="flex animate__animated animate__bounceInRight">
             <div className="basis-1/4 scale-95 hover:scale-100 ease-in duration-300">
               <img
                 src={JavaScriptCertificate}
@@ -131,7 +131,7 @@ const Certificates = () => {
               </h2>
             </div>
           </div>
-          <h2 className="text-center nunitoFont text-5xl mb-8 mt-20 pb-10">
+          <h2 className="text-center nunitoFont text-5xl mb-8 mt-20 pb-10 animate__animated animate__bounceInDown">
             {t("academyDiploma")}
           </h2>
           <div className="flex">
@@ -139,18 +139,18 @@ const Certificates = () => {
               <img
                 src={AcademyDiploma1}
                 alt="AcademyDiploma1"
-                className="rounded-3xl"
+                className="rounded-3xl animate__animated animate__bounceInLeft"
               />
             </div>
             <div className="basis-1/2 scale-95 hover:scale-100 ease-in duration-300">
               <img
                 src={AcademyDiploma2}
                 alt="AcademyDiploma2"
-                className="rounded-3xl"
+                className="rounded-3xl animate__animated animate__bounceInRight"
               />
             </div>
           </div>
-          <h2 className="text-center nunitoFont text-5xl mb-8 mt-15 pb-10">
+          <h2 className="text-center nunitoFont text-5xl mb-8 mt-15 pb-10 animate__animated animate__bounceInDown">
             {t("certificate")} {t("from")} Brainster Next Collage
           </h2>
           <div className="flex items-center justify-center">
@@ -158,7 +158,7 @@ const Certificates = () => {
               <img
                 src={NextDiploma}
                 alt="NextDiploma"
-                className="rounded-3xl"
+                className="rounded-3xl animate__animated animate__bounceInUp"
               />
             </div>
           </div>

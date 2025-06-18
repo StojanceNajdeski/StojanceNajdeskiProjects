@@ -20,10 +20,10 @@ const Contact = () => {
       <div className="pt-44 pb-15">
         <div className="w-[90%] mx-auto">
           <div className="flex pb-36">
-            <div className="basis-2/5 z-10">
+            <div className="basis-2/5 z- animate__animated animate__bounceInLeft">
               <img src={PhotoOfMe} alt="PhotoOfMe" className="rounded-b-3xl" />
             </div>
-            <div className="basis-3/5 z-10 pt-72 ml-15">
+            <div className="basis-3/5 z-10 pt-72 ml-15 animate__animated animate__bounceInRight">
               <h2 className="text-6xl mb-10 manropeFont">
                 {t("stojancheNajdeski")} <br />
                 Junior Front-End Developer

@@ -5,6 +5,8 @@ import MyProjects from "./myProjects/MyProjects";
 import Certificates from "./myCertificates/certificates";
 import AboutMe from "./AboutMe/aboutMe";
 import Contact from "./Contact";
+import Footer from "./Footer";
+import "animate.css";
 
 function App() {
   return (
@@ -18,6 +20,7 @@ function App() {
           <Route path="/aboutme" element={<AboutMe />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   );
