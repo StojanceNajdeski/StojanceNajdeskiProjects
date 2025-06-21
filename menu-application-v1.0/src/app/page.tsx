@@ -1,14 +1,13 @@
-import MenuComponent from "@/menuComponent/page";
-import { appWithTranslation } from "next-i18next";
-import type { AppProps } from "next/app";
+"use client";
+import "../../i18n";
+import MenuComponent from "./MenuComponent";
 
-function MyApp({ Component, pageProps }: AppProps) {
+function MyApp() {
   return (
     <div>
-      <Component {...pageProps} />;
       <MenuComponent />
     </div>
   );
 }
 
-export default appWithTranslation(MyApp);
+export default MyApp;

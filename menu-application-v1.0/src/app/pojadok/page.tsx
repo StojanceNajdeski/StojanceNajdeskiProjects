@@ -1,14 +1,18 @@
+"use client";
 import Link from "next/link";
-import React from "react";
+import React, { useTransition } from "react";
+import "../../../i18n";
+import { useTranslation } from "react-i18next";
 
 const Pojadok = () => {
+  const { t } = useTranslation();
   return (
     <div className="text-base sm:text-lg md:text-xl lg:text-2xl">
       <Link href="/">
         <p className="text-4xl pl-2">🡐</p>
       </Link>
       <div className="justify-center items-center flex flex-col">
-        <h1 className="text-center text-3xl">Бакарди Мени</h1>
+        <h1 className="text-center text-3xl">{t("bakardiMeni")}</h1>
         <h2 className="text-center pt-3 text-xl text-orange-600 font-bold uppercase">
           Појадок
         </h2>
