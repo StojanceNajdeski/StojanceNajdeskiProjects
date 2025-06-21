@@ -14,63 +14,52 @@ const Pojadok = () => {
       <div className="justify-center items-center flex flex-col">
         <h1 className="text-center text-3xl">{t("bakardiMeni")}</h1>
         <h2 className="text-center pt-3 text-xl text-orange-600 font-bold uppercase">
-          Појадок
+          {t("pojadok")}
         </h2>
-        <small className="font-bold">Се служи до 13:00ч</small>
+        <small className="font-bold">{t("seSluziDo")}</small>
       </div>
       <div className=" w-[90%] mx-auto pt-6">
         <div className="pb-5">
           <div className="flex">
-            <b className="basis-11/12 uppercase">Омлет 1</b>
+            <b className="basis-11/12 uppercase">{t("omlet1")}</b>
             <b className="basis-1/12">170</b>
           </div>
-          <small>
-            3 јајца, шунка, свежи печурки, кашкавал <br /> (прилог домати,
-            павлака, лепче)
-          </small>
+          <small>{t("omlet1Desc")}</small>
         </div>
         <div className="pb-5">
           <div className="flex">
-            <b className="basis-11/12 uppercase">Омлет 2</b>
+            <b className="basis-11/12 uppercase">{t("omlet2")}</b>
             <b className="basis-1/12">200</b>
           </div>
-          <small>
-            3 јајца, сувомеснато по избор, свежи печурки, кашкавал (прилог
-            домати, сирење, павлака, лепче)
-          </small>
+          <small>{t("omlet2Desc")}</small>
         </div>
         <div className="pb-5">
           <div className="flex">
-            <b className="basis-11/12 uppercase">Омлет Вегатаријански</b>
+            <b className="basis-11/12 uppercase">{t("omletVegetarijanski")}</b>
             <b className="basis-1/12">170</b>
           </div>
-          <small>
-            јајца, кромид, пиперки, печурки <br /> (прилог: домати, сирење,
-            лепче, павлака)
-          </small>
+          <small>{t("omletVegetarijanskiDesc")}</small>
         </div>
         <div className="pb-5">
           <div className="flex">
-            <b className="basis-11/12 uppercase">Омлет Комбиниран</b>
+            <b className="basis-11/12 uppercase">{t("omletKombiniran")}</b>
             <b className="basis-1/12">220</b>
           </div>
-          <small>Омлет со 3 јајца и состојки по избор</small>
+          <small>{t("omletKombiniranDesc")}</small>
         </div>
         <div className="pb-5">
           <div className="flex">
-            <b className="basis-11/12 uppercase">Бекендегс</b>
+            <b className="basis-11/12 uppercase">{t("bekendegs")}</b>
             <b className="basis-1/12">220</b>
           </div>
-          <small>
-            (3 јајца на око, сланина, сирење, павлака, домат, лепче)
-          </small>
+          <small>{t("bekendegsDesc")}</small>
         </div>
         <div className="pb-5">
           <div className="flex">
-            <b className="basis-11/12 uppercase">Мекица</b>
+            <b className="basis-11/12 uppercase">{t("mekica")}</b>
             <b className="basis-1/12">20</b>
           </div>
-          <small>Додаток: сирење, павлака</small>
+          <small>{t("mekicaDesc")}</small>
         </div>
       </div>
     </div>
