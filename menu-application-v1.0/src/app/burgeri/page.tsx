@@ -1,0 +1,41 @@
+import Link from "next/link";
+import React from "react";
+
+const Burgeri = () => {
+  return (
+    <div className="text-base sm:text-lg md:text-xl lg:text-2xl">
+      <Link href="/">
+        <p className="text-4xl pl-2">🡐</p>
+      </Link>
+      <div className="justify-center items-center flex flex-col">
+        <h1 className="text-center text-3xl">Бакарди Мени</h1>
+        <h2 className="text-center pt-3 text-xl text-orange-600 uppercase font-bold">
+          Бургери
+        </h2>
+      </div>
+      <div className=" w-[90%] mx-auto pt-6">
+        <div className="pb-5">
+          <div className="flex">
+            <b className="basis-11/12 uppercase">Хамбургер</b>
+            <b className="basis-1/12">170</b>
+          </div>
+        </div>
+        <div className="pb-5">
+          <div className="flex">
+            <b className="basis-11/12 uppercase">Чизбургер</b>
+            <b className="basis-1/12">200</b>
+          </div>
+        </div>
+        <div className="pb-5">
+          <div className="flex">
+            <b className="basis-11/12 uppercase">Бакарди бургер</b>
+            <b className="basis-1/12">230</b>
+          </div>
+        </div>
+        <h1 className="text-center">(Со сите бургери следува помфрит)</h1>
+      </div>
+    </div>
+  );
+};
+
+export default Burgeri;

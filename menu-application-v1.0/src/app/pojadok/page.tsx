@@ -1,0 +1,76 @@
+import Link from "next/link";
+import React from "react";
+
+const Pojadok = () => {
+  return (
+    <div className="text-base sm:text-lg md:text-xl lg:text-2xl">
+      <Link href="/">
+        <p className="text-4xl pl-2">🡐</p>
+      </Link>
+      <div className="justify-center items-center flex flex-col">
+        <h1 className="text-center text-3xl">Бакарди Мени</h1>
+        <h2 className="text-center pt-3 text-xl text-orange-600 font-bold uppercase">
+          Појадок
+        </h2>
+        <small className="font-bold">Се служи до 13:00ч</small>
+      </div>
+      <div className=" w-[90%] mx-auto pt-6">
+        <div className="pb-5">
+          <div className="flex">
+            <b className="basis-11/12 uppercase">Омлет 1</b>
+            <b className="basis-1/12">170</b>
+          </div>
+          <small>
+            3 јајца, шунка, свежи печурки, кашкавал <br /> (прилог домати,
+            павлака, лепче)
+          </small>
+        </div>
+        <div className="pb-5">
+          <div className="flex">
+            <b className="basis-11/12 uppercase">Омлет 2</b>
+            <b className="basis-1/12">200</b>
+          </div>
+          <small>
+            3 јајца, сувомеснато по избор, свежи печурки, кашкавал (прилог
+            домати, сирење, павлака, лепче)
+          </small>
+        </div>
+        <div className="pb-5">
+          <div className="flex">
+            <b className="basis-11/12 uppercase">Омлет Вегатаријански</b>
+            <b className="basis-1/12">170</b>
+          </div>
+          <small>
+            јајца, кромид, пиперки, печурки <br /> (прилог: домати, сирење,
+            лепче, павлака)
+          </small>
+        </div>
+        <div className="pb-5">
+          <div className="flex">
+            <b className="basis-11/12 uppercase">Омлет Комбиниран</b>
+            <b className="basis-1/12">220</b>
+          </div>
+          <small>Омлет со 3 јајца и состојки по избор</small>
+        </div>
+        <div className="pb-5">
+          <div className="flex">
+            <b className="basis-11/12 uppercase">Бекендегс</b>
+            <b className="basis-1/12">220</b>
+          </div>
+          <small>
+            (3 јајца на око, сланина, сирење, павлака, домат, лепче)
+          </small>
+        </div>
+        <div className="pb-5">
+          <div className="flex">
+            <b className="basis-11/12 uppercase">Мекица</b>
+            <b className="basis-1/12">20</b>
+          </div>
+          <small>Додаток: сирење, павлака</small>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Pojadok;
