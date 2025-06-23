@@ -1,125 +1,124 @@
+"use client";
 import Link from "next/link";
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const Pici = () => {
+  const { t } = useTranslation();
   return (
     <div className="text-base sm:text-lg md:text-xl lg:text-2xl">
       <Link href="/">
         <p className="text-4xl pl-2">🡐</p>
       </Link>
       <div className="justify-center items-center flex flex-col">
-        <h1 className="text-center text-3xl">Бакарди Мени</h1>
+        <h1 className="text-center text-3xl">{t("bakardiMeni")}</h1>
         <h2 className="text-center pt-3 text-xl text-orange-600 font-bold uppercase">
-          Пици
+          {t("pici")}
         </h2>
       </div>
       <div className=" w-[90%] mx-auto pt-6">
         <div className="pb-5">
           <div className="flex">
-            <b className="basis-11/12 uppercase">Маргарита</b>
+            <b className="basis-11/12 uppercase">{t("margarita")}</b>
             <b className="basis-1/12">230/450</b>
           </div>
-          <small>(сос, кашкавал)</small>
+          <small>{t("margaritaDesc")}</small>
         </div>
         <div className="pb-5">
           <div className="flex">
-            <b className="basis-11/12 uppercase">Капричиоза</b>
+            <b className="basis-11/12 uppercase">{t("kapricioza")}</b>
             <b className="basis-1/12">280/550</b>
           </div>
-          <small>(сос, кашкавал, пилешка шунка, печурки)</small>
+          <small>{t("kapriciozaDesc")}</small>
         </div>
         <div className="pb-5">
           <div className="flex">
-            <b className="basis-11/12 uppercase">
-              Пица со сувомеснато <br /> по избор
+            <b className="basis-11/12 uppercase whitespace-pre-line">
+              {t("picaSuvomesnata")}
             </b>
             <b className="basis-1/12">300/600</b>
           </div>
-          <small>(сос, кашкавал, сувомеснато, печурки)</small>
+          <small>{t("picaSuvomesnataDesc")}</small>
         </div>
         <div className="pb-5">
           <div className="flex">
-            <b className="basis-11/12 uppercase">Комбинирана пица</b>
+            <b className="basis-11/12 uppercase">{t("kombiniranaPica")}</b>
             <b className="basis-1/12">350/700</b>
           </div>
-          <small>
-            (сос, кашкавал, две врсти сувомеснато по избор, печурки)
-          </small>
+          <small>{t("kombiniranaPicaDesc")}</small>
         </div>
         <div className="pb-5">
           <div className="flex">
-            <b className="basis-11/12 uppercase">Фунги</b>
+            <b className="basis-11/12 uppercase">{t("fungi")}</b>
             <b className="basis-1/12">280/550</b>
           </div>
-          <small>(сос, кашкавал, печурки)</small>
+          <small>{t("fungiDesc")}</small>
         </div>
         <div className="pb-5">
           <div className="flex">
-            <b className="basis-11/12 uppercase">Вегетаријана</b>
+            <b className="basis-11/12 uppercase">{t("vegetarijanaPica")}</b>
             <b className="basis-1/12">280/550</b>
           </div>
-          <small>(сос, кашкавал, свеж зеленчук, кромид, печурки)</small>
+          <small>{t("vegetarijanaDesc")}</small>
         </div>
         <div className="pb-5">
           <div className="flex">
-            <b className="basis-11/12 uppercase">Калцоне</b>
+            <b className="basis-11/12 uppercase">{t("kalcone")}</b>
             <b className="basis-1/12">300</b>
           </div>
-          <small>(затворена пица со сос, кашкавал, шунка, печурки)</small>
+          <small>{t("kalconeDesc")}</small>
         </div>
         <div className="pb-5">
           <div className="flex">
-            <b className="basis-11/12 uppercase">Пица со стек</b>
+            <b className="basis-11/12 uppercase">{t("picaStek")}</b>
             <b className="basis-1/12">300/600</b>
           </div>
-          <small>(сос, кашкавал, стек, печурки)</small>
+          <small>{t("picaStekDesc")}</small>
         </div>
         <div className="pb-5">
           <div className="flex">
-            <b className="basis-11/12 uppercase">Пица со туна</b>
+            <b className="basis-11/12 uppercase">{t("picaTuna")}</b>
             <b className="basis-1/12">300/600</b>
           </div>
-          <small>(сос, кашкавал, туна, печурки)</small>
+          <small>{t("picaTunaDesc")}</small>
         </div>
         <div className="pb-5">
           <div className="flex">
-            <b className="basis-11/12 uppercase">Кватро формаџи</b>
+            <b className="basis-11/12 uppercase">{t("kvatroFormadzi")}</b>
             <b className="basis-1/12">350/700</b>
           </div>
-          <small>(сос, кашкавал, моцарела, пармезан, горгонзола)</small>
+          <small>{t("kvatroFormadziDesc")}</small>
         </div>
         <div className="pb-5">
           <div className="flex">
-            <b className="basis-11/12 uppercase">Пица со пршута</b>
+            <b className="basis-11/12 uppercase">{t("picaPrsuta")}</b>
             <b className="basis-1/12">400/800</b>
           </div>
-          <small>
-            (сос, кашкавал, пршута по избор (свинска или говедска), печурки)
-          </small>
+          <small>{t("picaPrsutaDesc")}</small>
         </div>
         <h2 className="text-center pt-1 text-xl text-orange-600 font-bold uppercase">
-          Сувомеснато
+          {t("suvomesnato")}
         </h2>
         <h3 className="text-center pt-1 pb-4 font-bold">
-          (листа на сувомеснати производи кои ги имаме на понуда)
+          {t("suvomesnatoLista")}
         </h3>
         <div className="pb-5">
           <div>
-            <b className="basis-11/12 uppercase">- Пилешка шунка</b>
+            <b className="basis-11/12 uppercase">- {t("pileskaSunka")}</b>
             <br />
-            <b className="basis-11/12 uppercase">- Свински врат</b>
+            <b className="basis-11/12 uppercase">- {t("svinskiVrat")}</b>
             <br />
-            <b className="basis-11/12 uppercase">- Сланина</b>
+            <b className="basis-11/12 uppercase">- {t("slanina")}</b>
             <br />
-            <b className="basis-11/12 uppercase">- Пилешко филе</b>
+            <b className="basis-11/12 uppercase">- {t("pileskoFile")}</b>
             <br />
-            <b className="basis-11/12 uppercase">- Свински кулен</b>
+            <b className="basis-11/12 uppercase">- {t("svinskiKulen")}</b>
             <br />
-            <b className="basis-11/12 uppercase">- Говедски кулен</b>
+            <b className="basis-11/12 uppercase">- {t("govedskiKulen")}</b>
             <br />
-            <b className="basis-11/12 uppercase">- Говедско филе</b>
+            <b className="basis-11/12 uppercase">- {t("govedskoFile")}</b>
             <br />
-            <b className="basis-11/12 uppercase">- Свинска печеница</b>
+            <b className="basis-11/12 uppercase">- {t("svinskaPecenica")}</b>
           </div>
         </div>
       </div>
